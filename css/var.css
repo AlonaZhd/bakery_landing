@@ -1,0 +1,29 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /*========== Colors ==========*/
+    --color-primary-dark: #31261a;
+    --color-primary-light: #faf4ea;
+    --color-brand-dark: #465929;
+    --color-brand-light: #819b57;
+
+    --color-text-light: #cfcfbc;
+    --color-input: #a18268;
+
+    /*========== Font and typography ==========*/
+    --body-font: "Poppins", sans-serif;
+
+    --h1-font-size: 128px;
+    --h2-font-size: 64px;
+    --h3-font-size: 40px;
+    --h4-font-size: 24px;
+    --normal-font-size: 18px;
+    --small-font-size: 14px;
+    --smaller-font-size: 12px;
+
+    /*========== Font weight ==========*/
+    --font-light: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-black: 700;
+}
