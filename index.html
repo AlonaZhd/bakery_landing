@@ -24,7 +24,7 @@
                         <li><a class="nav__link" href="#formats-section section">Formats</a></li>
                         <li><a class="nav__link" href="#contacts">Contacts</a></li>
                     </ul>
-                    <button class="button" type="button">Order a call</button>
+                    <button class="button modal-button__open" type="button">Order a call</button>
                 </div>
             </div>
         </nav>
@@ -202,5 +202,24 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop">
+        <div class="modal">
+            <button class="modal-button__close" type="button">
+                <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-cross"></use>
+                </svg>
+            </button>
+
+            <div class="modal__container">
+                <h2 class="section__tittle">Order a call</h2>
+                <p class="text--accent-dark">Leave a request and our specialist will contact you!</p>
+                <button class="button button--contact" type="button">Order a call</button>
+                <span class="text--accent-dark">Clicking on the button I agree to the privacy policy</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/modal.js"></script>
 </body>
 </html>
