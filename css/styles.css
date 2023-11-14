@@ -80,6 +80,7 @@ img {
 
 .nav__link {
     color: var(--color-primary-light);
+    transition: all 0.7s;
 }
 
 .nav__link:hover {
@@ -91,11 +92,11 @@ img {
 .button {
     color: var(--color-primary-light);
     font-weight: var(--font-semi-bold);
-
     padding: 16px 32px;
     border-radius: 8px;
     border: 2px solid var(--color-brand-light);
     background-color: var(--color-brand-light);
+    transition: all 0.5s;
 }
 
 .button:hover {
@@ -141,6 +142,18 @@ img {
     justify-content: space-between;
     align-items: center;
     gap: 64px;
+}
+
+.header__nav .nav__link {
+    padding: 12px 32px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+}
+
+.header__nav .nav__link:hover {
+    border-color: var(--color-primary-light);
+    background-color: var(--color-primary-light);
+    color: var(--color-brand-dark);
 }
 
 /*=============== HERO ===============*/
@@ -291,6 +304,11 @@ img {
     border-radius: 50%;
     border: 1px solid var(--color-primary-dark);
     fill: var(--color-primary-dark);
+    transition: all 0.5s;
+}
+
+.carousel-button.next {
+    transform: rotate(180deg);
 }
 
 .carousel-button:hover {
@@ -329,6 +347,7 @@ img {
     );
     border-radius: 16px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .format-card__img {
@@ -338,6 +357,11 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
+    transition: transform 0.7s;
+}
+
+.format-card:hover .format-card__img {
+    transform: scale(1.2);
 }
 
 .format-card__title {
@@ -359,16 +383,32 @@ img {
 
 .contacts-section__container {
     display: flex;
+    justify-content: space-between;
     gap: 32px;
 }
 
 .contacts__form {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.contacts__form .form__title {
+    align-items: flex-start;
+}
+
+.contacts__form .contact-form {
+    margin-top: 26px;
+}
+
+.contacts__form .contact-form {
+    padding: 0;
 }
 
 .contacts__map {
     border-radius: 16px;
+    height: auto;
 }
 
 /*=============== FOOTER ===============*/
@@ -433,6 +473,7 @@ img {
 
 .icon__social {
     fill: var(--color-primary-light);
+    transition: all 0.5s;
 }
 
 .icon__social:hover {
@@ -443,6 +484,7 @@ img {
 
 .backdrop {
     position: fixed;
+    padding: 20px 0;
     top: 0;
     bottom: 0;
     left: 0;
@@ -451,10 +493,10 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.7s;
 }
 
 .backdrop.is-hidden {
-    /* display: none; */
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -462,7 +504,7 @@ img {
 
 .modal {
     width: 880px;
-    height: 880px;
+    max-height: 880px;
     background-color: var(--color-primary-light);
     border-radius: 32px;
     position: relative;
@@ -471,11 +513,13 @@ img {
 .modal::before {
     content: "";
     position: absolute;
-    bottom: 30px;
-    right: 0;
-    width: 350px;
-    height: 340px;
+    right: -30px;
+    bottom: 0px;
+    width: 30%;
+    height: 30%;
     background-image: url(/images/decor-bread-large.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .modal .modal-button__close {
@@ -487,9 +531,49 @@ img {
     fill: var(--color-primary-dark);
 }
 
-.modal__container {
-    padding: 128px;
+.form__container {
+    padding: 100px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 24px;
+    text-align: center;
+}
+
+.form__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-top: 48px;
+}
+
+input::placeholder {
+    color: var(--color-input);
+}
+
+.form__input {
+    width: 100%;
+    padding: 16px 42px;
+    border-radius: 8px;
+    border: 1px solid var(--color-input);
+    background-color: transparent;
+}
+
+.form__input:focus {
+    border: 1px solid var(--color-brand-dark);
+    outline: none;
+}
+
+.text--accent-dark a {
+    color: var(--color-brand-dark);
+    text-decoration: underline;
 }
