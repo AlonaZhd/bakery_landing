@@ -1,0 +1,80 @@
+/*=============== BASE ===============*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
+}
+
+h2,
+h3 {
+    color: var(--color-primary-dark);
+}
+
+.text--accent {
+    text-transform: uppercase;
+    color: var(--color-brand-light);
+    font-weight: var(--font-semi-bold);
+
+    &-dark {
+        color: var(--color-brand-dark);
+
+        & a {
+            color: var(--color-brand-dark);
+            text-decoration: underline;
+        }
+    }
+
+    &-input {
+        color: var(--color-input);
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}

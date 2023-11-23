@@ -1,0 +1,10 @@
+/*=============== LINK ===============*/
+
+.nav__link {
+    color: var(--color-primary-light);
+    transition: all 0.7s;
+
+    &:hover {
+        color: var(--color-brand-light);
+    }
+}

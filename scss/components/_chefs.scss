@@ -1,0 +1,64 @@
+/*=============== CHEFS ===============*/
+
+.chefs-section {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .chefs__title {
+        text-align: center;
+        position: relative;
+
+        & .accent {
+            color: var(--color-brand-dark);
+
+            &::before,
+            &::after {
+                content: "";
+                display: block;
+                width: 352px;
+                height: 2px;
+                background-color: var(--color-text-light);
+                bottom: 23px;
+                position: absolute;
+            }
+
+            &::after {
+                right: 0;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 60px;
+    }
+
+    &__item {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+}
+
+.chef-card {
+    display: flex;
+    gap: 30px;
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__title {
+        font-size: var(--h3-font-size);
+    }
+
+    &__photo {
+        width: 240px;
+        border-radius: 4px 4px 4px 200px;
+        box-shadow: -16px 16px 0 0 var(--color-primary-light),
+            -16px 16px 0 2px var(--color-input);
+    }
+}

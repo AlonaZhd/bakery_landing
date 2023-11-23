@@ -1,0 +1,20 @@
+/*=============== BUTTON ===============*/
+
+.button {
+    color: var(--color-primary-light);
+    font-weight: var(--font-semi-bold);
+    padding: 16px 32px;
+    border-radius: 8px;
+    border: 2px solid var(--color-brand-light);
+    background-color: var(--color-brand-light);
+    transition: all 0.5s;
+
+    &:hover {
+        color: var(--color-brand-light);
+        background-color: var(--color-primary-light); 
+    }
+
+    &--contact {
+        width: fit-content;
+    }
+}

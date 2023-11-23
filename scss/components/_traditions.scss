@@ -1,0 +1,20 @@
+/*=============== TRADITIONS ===============*/
+
+.traditions-section {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        gap: 35px;
+    }
+
+    &__containt {
+        max-width: 570px;
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+    }
+
+    &__image {
+        border-radius: 400px 400px 0px 0px;
+    }
+}
