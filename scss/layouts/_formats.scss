@@ -1,0 +1,21 @@
+/*=============== FORMATS ===============*/
+.formats {
+    &__carousel {
+        margin-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 349px);
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__item {
+    }
+}
+
+

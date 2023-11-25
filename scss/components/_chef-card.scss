@@ -1,0 +1,21 @@
+.chef-card {
+    display: flex;
+    gap: 30px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__title {
+        font-size: var(--h3-font-size);
+    }
+
+    &__photo {
+        width: 240px;
+        border-radius: 4px 4px 4px 200px;
+        box-shadow: -16px 16px 0 0 var(--color-primary-light),
+            -16px 16px 0 2px var(--color-input);
+    }
+}

@@ -3,16 +3,21 @@
 
 @import 'base';
 
-@import './utils/link';
-@import './utils/buttons';
+@import './components/link';
+@import './components/buttons';
+@import './components/button-close';
+@import './components/carousel-button';
+@import './components/chef-card';
+@import './components/format-card';
+@import './components/order';
+@import './components/icon';
 
-@import './components/header';
-@import './components/hero';
-@import './components/advantages';
-@import './components/traditions';
-@import './components/chefs';
-@import './components/formats';
-@import './components/contacts';
-@import './components/footer';
-@import './components/modal';
-
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/advantages';
+@import './layouts/traditions';
+@import './layouts/chefs';
+@import './layouts/formats';
+@import './layouts/contacts';
+@import './layouts/footer';
+@import './layouts/modal';

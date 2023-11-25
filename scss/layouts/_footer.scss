@@ -1,6 +1,6 @@
 /*=============== FOOTER ===============*/
 
-.footer-section {
+.footer {
     margin-top: 96px;
     background-color: var(--color-primary-dark);
     background-image: url(/images/footer-bg.png);
@@ -56,13 +56,4 @@
         display: flex;
         gap: 24px;
     }    
-}
-
-.icon__social {
-    fill: var(--color-primary-light);
-    transition: all 0.5s;
-
-    &:hover {
-        fill: var(--color-input);
-    }
 }

@@ -1,6 +1,6 @@
 /*=============== HERO ===============*/
 
-.hero-section {
+.hero {
     padding: 272px 0;
     background-image: linear-gradient(
             102.76deg,
@@ -13,15 +13,11 @@
     background-position: center top;
     background-size: cover;
     /* background-attachment: fixed; */
-}
 
-.hero__title {
-    text-align: center;
-    font-size: var(--h1-font-size);
-    font-weight: var(--font-black);
-    color: var(--color-primary-light);
-
-    & .accent {
-        color: var(--color-brand-light);
-    }
+    &__title {
+        text-align: center;
+        font-size: var(--h1-font-size);
+        font-weight: var(--font-black);
+        color: var(--color-primary-light);
+    }    
 }

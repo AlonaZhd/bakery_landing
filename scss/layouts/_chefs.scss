@@ -1,19 +1,16 @@
 /*=============== CHEFS ===============*/
 
-.chefs-section {
+.chefs {
     &__container {
         display: flex;
         flex-direction: column;
         gap: 80px;
     }
 
-    .chefs__title {
-        text-align: center;
+    &__title {
         position: relative;
 
-        & .accent {
-            color: var(--color-brand-dark);
-
+        & .text--accent-dark {
             &::before,
             &::after {
                 content: "";
@@ -38,27 +35,5 @@
 
     &__item {
         flex-basis: calc((100% - 30px) / 2);
-    }
-}
-
-.chef-card {
-    display: flex;
-    gap: 30px;
-
-    &-content {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    &__title {
-        font-size: var(--h3-font-size);
-    }
-
-    &__photo {
-        width: 240px;
-        border-radius: 4px 4px 4px 200px;
-        box-shadow: -16px 16px 0 0 var(--color-primary-light),
-            -16px 16px 0 2px var(--color-input);
     }
 }

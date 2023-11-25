@@ -1,0 +1,15 @@
+/*=============== CONTACTS ===============*/
+.contacts {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}

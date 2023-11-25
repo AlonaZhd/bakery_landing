@@ -1,0 +1,36 @@
+/*=============== HEADER ===============*/
+
+.header {
+    width: 100%;
+    padding: 32px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 64px;
+
+        .nav-link {
+        padding: 12px 32px;
+        border-radius: 8px;
+        color: var(--color-primary-light);
+        border: 2px solid transparent;
+
+            &:hover {
+                border-color: var(--color-primary-light);
+                background-color: var(--color-primary-light);
+                color: var(--color-brand-dark);
+            }
+        }
+    }
+}

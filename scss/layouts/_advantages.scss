@@ -1,0 +1,16 @@
+/*=============== ADVANTAGES ===============*/
+
+.advantages {
+    background-color: var(--color-brand-light);
+
+    &__list {
+        padding: 16px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--color-primary-light);
+        font-size: 20px;
+        font-weight: var(--font-light);
+    }
+}
+
