@@ -16,30 +16,15 @@ body {
     font-size: var(--normal-font-size);
     background-color: var(--color-primary-light);
     color: var(--color-primary-dark);
+
+    @media screen and (max-width: $screen-tablet) {
+        font-size: var(--small-font-size);
+    }
 }
 
 h2,
 h3 {
     color: var(--color-primary-dark);
-}
-
-.text--accent {
-    text-transform: uppercase;
-    color: var(--color-brand-light);
-    font-weight: var(--font-black);
-
-    &-dark {
-        color: var(--color-brand-dark);
-
-        & a {
-            color: var(--color-brand-dark);
-            text-decoration: underline;
-        }
-    }
-
-    &-input {
-        color: var(--color-input);
-    }
 }
 
 ul {
@@ -63,18 +48,21 @@ img {
     object-fit: cover;
 }
 
-.container {
-    width: 100%;
-    max-width: 1250px;
-    margin: 0 auto;
-    padding: 0 16px;
-}
+.text--accent {
+    text-transform: uppercase;
+    color: var(--color-brand-light);
+    font-weight: var(--font-black);
 
-.visually-hidden {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+    &-dark {
+        color: var(--color-brand-dark);
+
+        & a {
+            color: var(--color-brand-dark);
+            text-decoration: underline;
+        }
+    }
+
+    &-input {
+        color: var(--color-input);
+    }
 }

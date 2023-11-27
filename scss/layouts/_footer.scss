@@ -5,8 +5,46 @@
     background-color: var(--color-primary-dark);
     background-image: url(/images/footer-bg.png);
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center;
     background-size: cover;
+    position: relative;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            background-repeat: no-repeat;
+        }
+
+        &::before {
+            left: 0;
+            width: 180px;
+            height: 120px;
+            background-image: url(/images/decor-bread-small.png);
+
+            @media screen and (max-width: $screen-tablet) {
+                left: 0;
+                top: 48px;
+                height: 200px;
+                background-image: url(/images/decor-bread-footer-s.png);
+            }
+        }
+
+        &::after {
+            right: 0;
+            width: 305px;
+            height: 185px;
+            background-image: url(/images/decor-bread-big.png);
+
+            @media screen and (max-width: $screen-tablet) {
+                right: 0;
+                bottom: 0;
+                width: 100px;
+                height: 90px;
+                background-image: url(/images/decor-bread-footer-l.png);
+            }
+        }    
     
     &__container {
         padding: 32px 0;
@@ -14,27 +52,12 @@
         grid-template-columns: repeat(4, 1fr);
         justify-content: space-between;
         gap: 32px;
-        position: relative;
-
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-        }
-
-        &::before {
-            left: -160px;
-            width: 180px;
-            height: 120px;
-            background-image: url(/images/decor-bread-small.png);
-        }
-
-        &::after {
-            right: -100px;
-            width: 305px;
-            height: 185px;
-            background-image: url(/images/decor-bread-big.png);
+        
+        @media screen and (max-width: $screen-tablet) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
         }
     }
 
@@ -44,6 +67,10 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
+        @media screen and (max-width: $screen-tablet) {
+            align-items: center;
+            text-align: center;
+        }
     }
 
     &__address a,

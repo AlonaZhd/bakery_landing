@@ -5,25 +5,31 @@
         display: flex;
         flex-direction: column;
         gap: 80px;
+
+        @media screen and (max-width: $screen-laptop) {
+            gap: 24px;
+        }
     }
 
     &__title {
         position: relative;
 
-        & .text--accent-dark {
-            &::before,
-            &::after {
-                content: "";
-                display: block;
-                width: 352px;
-                height: 2px;
-                background-color: var(--color-text-light);
-                bottom: 23px;
-                position: absolute;
-            }
+        @media screen and (min-width: $screen-laptop) {
+            & .text--accent-dark {
+                &::before,
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 352px;
+                    height: 2px;
+                    background-color: var(--color-text-light);
+                    bottom: 23px;
+                    position: absolute;
+                }
 
-            &::after {
-                right: 0;
+                &::after {
+                    right: 0;
+                }
             }
         }
     }
@@ -31,6 +37,12 @@
     &__list {
         display: flex;
         gap: 60px;
+        padding-left: 20px;
+
+        @media screen and (max-width: $screen-laptop) {
+            flex-direction: column;
+            gap: 36px;
+        }
     }
 
     &__item {

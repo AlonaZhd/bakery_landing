@@ -11,6 +11,29 @@
         color: var(--color-primary-light);
         font-size: 20px;
         font-weight: var(--font-light);
+
+        @media screen and (max-width: $screen-desktop) {
+            font-size: var(--normal-font-size);
+        }
+
+        @media screen and (max-width: $screen-laptop) {
+            font-size: var(--small-font-size);
+        }
+
+        @media screen and (max-width: $screen-tablet) {
+            padding: 24px 40px;
+            background-color: var(--color-text-light);
+            border-radius: 24px;
+            flex-direction: column;
+            text-align: center;
+            color: var(--color-primary-dark);
+            gap: 16px;
+            font-weight: var(--font-light);
+        }
+    }
+
+    @media screen and (max-width: $screen-tablet) {
+        background-color: transparent;
     }
 }
 

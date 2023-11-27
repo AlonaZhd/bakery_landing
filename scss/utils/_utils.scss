@@ -1,11 +1,32 @@
-
+@import './var';
 /*=============== UTILS ===============*/
+
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 
 .containt-wrapp {
     color: #31261a;
     display: flex;
     flex-direction: column;
     gap: 96px;
+
+    @media screen and (max-width: $screen-tablet) {
+        margin-top: 40px;
+        gap: 40px;
+    }
 }
 
 .section__title {
@@ -16,5 +37,9 @@
 
     &--center{
         text-align: center;
+    }
+
+    @media screen and (max-width: $screen-tablet) {
+        font-size: var(--tablet-size);
     }
 }

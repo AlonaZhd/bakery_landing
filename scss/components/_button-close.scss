@@ -5,4 +5,9 @@
     border: none;
     padding: 8px;
     fill: var(--color-primary-dark);
+
+        @media screen and (max-width: $screen-tablet) {
+            top: 20px;
+            right: 20px;
+        }
 }

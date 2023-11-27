@@ -25,12 +25,33 @@
         border-radius: 8px;
         color: var(--color-primary-light);
         border: 2px solid transparent;
+        transition: all 0.5s;
 
             &:hover {
                 border-color: var(--color-primary-light);
                 background-color: var(--color-primary-light);
                 color: var(--color-brand-dark);
             }
+        }
+
+        @media screen and (max-width: $screen-laptop) {
+            display: none;
+        }
+    }
+
+    &__button {
+        @media screen and (max-width: $screen-desktop) {
+            display: none;
+        }
+    }
+
+    &__burger {
+        display: none;
+        border: none;
+        fill: var(--color-primary-light);
+
+        @media screen and (max-width: $screen-laptop) {
+            display: block;
         }
     }
 }

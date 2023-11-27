@@ -16,6 +16,7 @@
     --h2-font-size: 64px;
     --h3-font-size: 40px;
     --h4-font-size: 24px;
+    --tablet-size: 32px;
     --normal-font-size: 18px;
     --small-font-size: 14px;
     --smaller-font-size: 12px;
@@ -27,3 +28,14 @@
     --font-semi-bold: 600;
     --font-black: 700;
 }
+
+/*========== Breakpoint ==========*/
+$screen-desktop: 1279px;
+$screen-laptop: 1024px;
+$screen-tablet: 768px;
+$screen-mobile: 480px;
+
+/* Large(Desktop): 1025px - 1279px */
+/* Medium(Laptop): 769px - 1024px */
+/* Small(Tablet): 481px - 768px */
+/* Extra small(Mobile): 0px (320px) - 480px */

@@ -2,6 +2,10 @@
     display: flex;
     gap: 30px;
 
+    @media screen and (max-width: $screen-mobile) {
+        gap: 16px;
+    }
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -10,12 +14,21 @@
 
     &__title {
         font-size: var(--h3-font-size);
+
+        @media screen and (max-width: $screen-tablet) {
+            font-size: var(--h4-font-size);
+        }
     }
 
     &__photo {
         width: 240px;
         border-radius: 4px 4px 4px 200px;
-        box-shadow: -16px 16px 0 0 var(--color-primary-light),
-            -16px 16px 0 2px var(--color-input);
+        box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-input);
+
+        @media screen and (max-width: $screen-mobile) {
+            width: 50%;
+            display: block;
+            margin: auto;
+        }
     }
 }
